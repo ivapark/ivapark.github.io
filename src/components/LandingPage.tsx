@@ -13,6 +13,7 @@ const LandingPage: React.FC = () => {
                 justifyContent: "center", // Center align the content
                 gap: "8rem", // Space between IVA PARK and introduction
                 padding: "0 2rem",
+                fontFamily: "'Kufam', sans-serif", // Apply Kufam font globally
             }}
         >
             {/* IVA and PARK Section */}
@@ -36,7 +37,7 @@ const LandingPage: React.FC = () => {
                         variant="h1"
                         sx={{
                             color: "#4A2040", // Dark purple
-                            fontWeight: "bold",
+                            fontWeight: "normal", // Remove bold
                             fontSize: "8rem", // Adjust font size
                         }}
                     >
@@ -46,7 +47,7 @@ const LandingPage: React.FC = () => {
                         variant="h1"
                         sx={{
                             color: "#4A2040",
-                            fontWeight: "bold",
+                            fontWeight: "normal", // Remove bold
                             fontSize: "8rem",
                         }}
                     >
@@ -56,7 +57,7 @@ const LandingPage: React.FC = () => {
                         variant="h1"
                         sx={{
                             color: "#4A2040",
-                            fontWeight: "bold",
+                            fontWeight: "normal", // Remove bold
                             fontSize: "8rem",
                         }}
                     >
@@ -78,7 +79,7 @@ const LandingPage: React.FC = () => {
                         variant="h1"
                         sx={{
                             color: "#4A2040", // Dark purple
-                            fontWeight: "bold",
+                            fontWeight: "normal", // Remove bold
                             fontSize: "8rem",
                         }}
                     >
@@ -88,7 +89,7 @@ const LandingPage: React.FC = () => {
                         variant="h1"
                         sx={{
                             color: "#4A2040",
-                            fontWeight: "bold",
+                            fontWeight: "normal", // Remove bold
                             fontSize: "8rem",
                         }}
                     >
@@ -98,7 +99,7 @@ const LandingPage: React.FC = () => {
                         variant="h1"
                         sx={{
                             color: "#4A2040",
-                            fontWeight: "bold",
+                            fontWeight: "normal", // Remove bold
                             fontSize: "8rem",
                         }}
                     >
@@ -108,7 +109,7 @@ const LandingPage: React.FC = () => {
                         variant="h1"
                         sx={{
                             color: "#4A2040",
-                            fontWeight: "bold",
+                            fontWeight: "normal", // Remove bold
                             fontSize: "8rem",
                         }}
                     >
@@ -128,7 +129,7 @@ const LandingPage: React.FC = () => {
                     variant="h5"
                     sx={{
                         color: "#000", // Black color
-                        fontWeight: "bold",
+                        fontWeight: "normal", // Remove bold
                         marginBottom: "1rem",
                     }}
                 >
@@ -139,6 +140,7 @@ const LandingPage: React.FC = () => {
                         color: "#000",
                         fontSize: "1.2rem",
                         lineHeight: 1.6,
+                        fontWeight: "normal", // Remove bold
                     }}
                 >
                     I am a UI/UX designer passionate about turning complex ideas

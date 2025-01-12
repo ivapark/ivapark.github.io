@@ -1,12 +1,13 @@
 import React from "react";
 import { AppBar, Toolbar, Typography, Box } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
     return (
         <AppBar
             position="static"
             sx={{
-                backgroundColor: "#FFEEEE",
+                backgroundColor: "#FFFFFF", // Light pink background
                 boxShadow: "none",
                 padding: "1rem 2rem",
             }}
@@ -28,45 +29,42 @@ const Header: React.FC = () => {
 
                 {/* Navigation Links */}
                 <Box sx={{ display: "flex", gap: "1.5rem" }}>
-                    <Typography
-                        variant="body1"
-                        component="a"
-                        href="#home"
-                        sx={{
+                    <Link
+                        to="/"
+                        style={{
                             textDecoration: "none",
                             color: "#000",
-                            fontWeight: "bold",
-                            "&:hover": { color: "#4A2040" },
+                            fontWeight: "normal",
                         }}
                     >
                         Home
-                    </Typography>
-                    <Typography
-                        variant="body1"
-                        component="a"
-                        href="#about"
-                        sx={{
+                    </Link>
+                    <Link
+                        to="/about"
+                        style={{
                             textDecoration: "none",
                             color: "#000",
-                            fontWeight: "bold",
-                            "&:hover": { color: "#4A2040" },
+                            fontWeight: "normal",
                         }}
                     >
                         About Me
-                    </Typography>
-                    <Typography
-                        variant="body1"
-                        component="a"
-                        href="#portfolio"
-                        sx={{
+                    </Link>
+                    <Link
+                        to="/portfolio"
+                        style={{
                             textDecoration: "none",
                             color: "#000",
-                            fontWeight: "bold",
-                            "&:hover": { color: "#4A2040" },
+                            fontWeight: "normal",
+                        }}
+                        onMouseEnter={(e) => {
+                            (e.target as HTMLElement).style.color = "#4A2040";
+                        }}
+                        onMouseLeave={(e) => {
+                            (e.target as HTMLElement).style.color = "#000";
                         }}
                     >
                         Portfolio
-                    </Typography>
+                    </Link>
                 </Box>
             </Toolbar>
         </AppBar>
@@ -74,4 +72,3 @@ const Header: React.FC = () => {
 };
 
 export default Header;
-
