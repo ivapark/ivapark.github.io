@@ -7,13 +7,12 @@ const LandingPage: React.FC = () => {
             sx={{
                 height: "100vh",
                 width: "100%",
-                backgroundColor: "#FFEEEE", // Light pink background
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center", // Center align the content
                 gap: "8rem", // Space between IVA PARK and introduction
                 padding: "0 2rem",
-                fontFamily: "'Kufam', sans-serif", // Apply Kufam font globally
+                fontFamily: "'PT Sans Narrow', Arial, sans-serif",
             }}
         >
             {/* IVA and PARK Section */}
@@ -36,8 +35,8 @@ const LandingPage: React.FC = () => {
                     <Typography
                         variant="h1"
                         sx={{
-                            color: "#4A2040", // Dark purple
-                            fontWeight: "normal", // Remove bold
+                            color: "#000000", // Dark purple
+                            fontWeight: "bold", // Remove bold
                             fontSize: "8rem", // Adjust font size
                         }}
                     >
@@ -46,8 +45,8 @@ const LandingPage: React.FC = () => {
                     <Typography
                         variant="h1"
                         sx={{
-                            color: "#4A2040",
-                            fontWeight: "normal", // Remove bold
+                            color: "#000000",
+                            fontWeight: "bold", // Remove bold
                             fontSize: "8rem",
                         }}
                     >
@@ -56,8 +55,8 @@ const LandingPage: React.FC = () => {
                     <Typography
                         variant="h1"
                         sx={{
-                            color: "#4A2040",
-                            fontWeight: "normal", // Remove bold
+                            color: "#000000",
+                            fontWeight: "bold", // Remove bold
                             fontSize: "8rem",
                         }}
                     >
@@ -78,8 +77,8 @@ const LandingPage: React.FC = () => {
                     <Typography
                         variant="h1"
                         sx={{
-                            color: "#4A2040", // Dark purple
-                            fontWeight: "normal", // Remove bold
+                            color: "#000000", // Dark purple
+                            fontWeight: "bold", // Remove bold
                             fontSize: "8rem",
                         }}
                     >
@@ -88,8 +87,8 @@ const LandingPage: React.FC = () => {
                     <Typography
                         variant="h1"
                         sx={{
-                            color: "#4A2040",
-                            fontWeight: "normal", // Remove bold
+                            color: "#000000",
+                            fontWeight: "bold", // Remove bold
                             fontSize: "8rem",
                         }}
                     >
@@ -98,8 +97,8 @@ const LandingPage: React.FC = () => {
                     <Typography
                         variant="h1"
                         sx={{
-                            color: "#4A2040",
-                            fontWeight: "normal", // Remove bold
+                            color: "#000000",
+                            fontWeight: "bold", // Remove bold
                             fontSize: "8rem",
                         }}
                     >
@@ -108,8 +107,8 @@ const LandingPage: React.FC = () => {
                     <Typography
                         variant="h1"
                         sx={{
-                            color: "#4A2040",
-                            fontWeight: "normal", // Remove bold
+                            color: "#000000",
+                            fontWeight: "bold", // Remove bold
                             fontSize: "8rem",
                         }}
                     >

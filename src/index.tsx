@@ -1,16 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom/client"; // React 18+
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
 
-const rootElement = document.getElementById('root'); // This should match the 'root' id in index.html
+// Ensure your index.html has <div id="root"></div>
+const rootElement = document.getElementById("root");
 if (!rootElement) {
-  throw new Error("Root element not found. Check if <div id='root'></div> exists in index.html.");
+    throw new Error("Root element not found. Check if <div id='root'></div> exists in index.html.");
 }
 
+// Create the root for rendering
 const root = ReactDOM.createRoot(rootElement);
 
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <React.StrictMode>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    </React.StrictMode>
 );

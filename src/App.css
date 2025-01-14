@@ -1,0 +1,11 @@
+/* App.css */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensures full-page coverage */
+    background-image: url('/stone-texture.png'); /* Use the correct path */
+    background-repeat: repeat; /* Tile the texture */
+    background-size: cover; /* Scale appropriately */
+    background-attachment: fixed; /* Keeps background fixed during scrolling */
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+}

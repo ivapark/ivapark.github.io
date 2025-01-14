@@ -7,7 +7,6 @@ const Portfolio: React.FC = () => {
     return (
         <Box
             sx={{
-                backgroundColor: "#FFEEEE", // Light pink background
                 minHeight: "100vh",
                 padding: "4rem 2rem",
                 display: "flex",

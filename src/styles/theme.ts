@@ -1,18 +1,17 @@
-// src/styles/theme.ts
-import { createTheme } from '@mui/material/styles';
+import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
-  typography: {
-    fontFamily: "'Roboto', 'Arial', sans-serif",
-  },
-  palette: {
-    primary: {
-      main: '#5A2750',
+    palette: {
+        primary: {
+            main: "#4A2040", // Dark purple
+        },
+        text: {
+            primary: "#000000", // Black
+        },
     },
-    secondary: {
-      main: '#F5E9E8',
+    typography: {
+      fontFamily: "'PT Sans Narrow', Arial, sans-serif",
     },
-  },
 });
 
 export default theme;
