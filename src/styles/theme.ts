@@ -10,7 +10,7 @@ const theme = createTheme({
         },
     },
     typography: {
-      fontFamily: "'PT Sans Narrow', Arial, sans-serif",
+      fontFamily: "'Playfair Display', serif", // Updated fontFamily
     },
 });
 

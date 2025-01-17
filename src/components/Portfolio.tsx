@@ -13,7 +13,7 @@ const Portfolio: React.FC = () => {
                 flexDirection: "column",
                 alignItems: "center",
                 gap: "2rem",
-                fontFamily: "'Kufam', sans-serif", // Apply Kufam font
+                fontFamily: "'Playfair Display', serif", // Updated fontFamily
             }}
         >
             {/* Section Title */}

@@ -12,7 +12,7 @@ const LandingPage: React.FC = () => {
                 justifyContent: "center", // Center align the content
                 gap: "8rem", // Space between IVA PARK and introduction
                 padding: "0 2rem",
-                fontFamily: "'PT Sans Narrow', Arial, sans-serif",
+                fontFamily: "'Playfair Display', serif", // Updated fontFamily
             }}
         >
             {/* IVA and PARK Section */}
@@ -36,8 +36,8 @@ const LandingPage: React.FC = () => {
                         variant="h1"
                         sx={{
                             color: "#000000", // Dark purple
-                            fontWeight: "bold", // Remove bold
-                            fontSize: "8rem", // Adjust font size
+                            fontWeight: "normal", // Remove bold
+                            fontSize: "10rem", // Adjust font size
                         }}
                     >
                         I
@@ -46,8 +46,8 @@ const LandingPage: React.FC = () => {
                         variant="h1"
                         sx={{
                             color: "#000000",
-                            fontWeight: "bold", // Remove bold
-                            fontSize: "8rem",
+                            fontWeight: "normal", // Remove bold
+                            fontSize: "10rem",
                         }}
                     >
                         V
@@ -56,8 +56,8 @@ const LandingPage: React.FC = () => {
                         variant="h1"
                         sx={{
                             color: "#000000",
-                            fontWeight: "bold", // Remove bold
-                            fontSize: "8rem",
+                            fontWeight: "normal", // Remove bold
+                            fontSize: "10rem",
                         }}
                     >
                         A
@@ -78,8 +78,8 @@ const LandingPage: React.FC = () => {
                         variant="h1"
                         sx={{
                             color: "#000000", // Dark purple
-                            fontWeight: "bold", // Remove bold
-                            fontSize: "8rem",
+                            fontWeight: "normal", // Remove bold
+                            fontSize: "10rem",
                         }}
                     >
                         P
@@ -88,8 +88,8 @@ const LandingPage: React.FC = () => {
                         variant="h1"
                         sx={{
                             color: "#000000",
-                            fontWeight: "bold", // Remove bold
-                            fontSize: "8rem",
+                            fontWeight: "normal", // Remove bold
+                            fontSize: "10rem",
                         }}
                     >
                         A
@@ -98,8 +98,8 @@ const LandingPage: React.FC = () => {
                         variant="h1"
                         sx={{
                             color: "#000000",
-                            fontWeight: "bold", // Remove bold
-                            fontSize: "8rem",
+                            fontWeight: "normal", // Remove bold
+                            fontSize: "10rem",
                         }}
                     >
                         R
@@ -108,8 +108,8 @@ const LandingPage: React.FC = () => {
                         variant="h1"
                         sx={{
                             color: "#000000",
-                            fontWeight: "bold", // Remove bold
-                            fontSize: "8rem",
+                            fontWeight: "normal", // Remove bold
+                            fontSize: "10rem",
                         }}
                     >
                         K

@@ -12,7 +12,7 @@ const AboutMe: React.FC = () => {
                 alignItems: "center",
                 justifyContent: "center",
                 gap: "5rem",
-                fontFamily: "'PT Sans Narrow', sans-serif",
+                fontFamily: "'Playfair Display', serif", // Updated fontFamily
             }}
         >
             {/* Profile Picture */}
@@ -39,7 +39,7 @@ const AboutMe: React.FC = () => {
                     sx={{
                         fontWeight: "bold",
                         marginBottom: "1.5rem",
-                        fontFamily: "'PT Sans Narrow', sans-serif",
+                        fontFamily: "'Playfair Display', serif", // Updated fontFamily
                     }}
                 >
                     About Me
@@ -49,7 +49,7 @@ const AboutMe: React.FC = () => {
                     sx={{
                         fontSize: "1.2rem",
                         lineHeight: "1.8",
-                        fontFamily: "'PT Sans Narrow', sans-serif",
+                        fontFamily: "'Playfair Display', serif", // Updated fontFamily
                     }}
                 >
                     I’m Iva, a Junior at NYU double majoring in Computer Science and
@@ -63,7 +63,7 @@ const AboutMe: React.FC = () => {
                         fontSize: "1.2rem",
                         lineHeight: "1.8",
                         marginTop: "1.5rem",
-                        fontFamily: "'PT Sans Narrow', sans-serif",
+                        fontFamily: "'Playfair Display', serif", // Updated fontFamily
                     }}
                 >
                     My work spans startups and research projects, where I combine technical
@@ -76,7 +76,7 @@ const AboutMe: React.FC = () => {
                         fontSize: "1.2rem",
                         lineHeight: "1.8",
                         marginTop: "1.5rem",
-                        fontFamily: "'PT Sans Narrow', sans-serif",
+                        fontFamily: "'Playfair Display', serif", // Updated fontFamily
                     }}
                 >
                     I’m passionate about bridging technology and
