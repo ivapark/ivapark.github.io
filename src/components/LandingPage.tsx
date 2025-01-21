@@ -132,7 +132,7 @@ const LandingPage: React.FC = () => {
                         marginBottom: "1rem",
                     }}
                 >
-                    Hello there,
+                    Hi, I'm Iva
                 </Typography>
                 <Typography
                     sx={{

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Card, CardContent, CardMedia } from "@mui/material";
+import { Box, Typography, Card, CardContent, CardMedia, Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import Image1 from "../assets/image1.png"; // Adjust the path if necessary
 
@@ -50,7 +50,7 @@ const Portfolio: React.FC = () => {
                         display: "flex",
                         flexDirection: "column",
                         gap: "1rem",
-                        position: "relative",
+                        justifyContent: "center", // Center align vertically
                     }}
                 >
                     <Typography
@@ -59,12 +59,7 @@ const Portfolio: React.FC = () => {
                             color: "#4F0D81", // Updated color
                             fontWeight: "bold",
                             cursor: "pointer",
-                            "&:hover": { textDecoration: "underline" },
-                            position: "relative",
-                            top: "-10px", // Move it slightly upwards
                         }}
-                        component={Link}
-                        to="/misspoppins" // Navigate to MissPoppins page
                     >
                         MissPoppins App Redesign:
                     </Typography>
@@ -80,15 +75,16 @@ const Portfolio: React.FC = () => {
                     <Box
                         sx={{
                             backgroundColor: "#FDF3FD", // Updated background color
-                            padding: "1.5rem", // Adjusted padding for height
+                            padding: "1.5rem",
                             borderRadius: "8px",
+                            marginTop: "1rem", // Add spacing from the subtitle
                         }}
                     >
                         <Typography
                             variant="body1"
                             sx={{
                                 color: "#000000", // Updated text color
-                                marginBottom: "1rem", // Adjusted for spacing
+                                marginBottom: "1rem",
                             }}
                         >
                             <strong>Overview:</strong> Streamlined navigation and
@@ -99,7 +95,7 @@ const Portfolio: React.FC = () => {
                             variant="body1"
                             sx={{
                                 color: "#000000", // Updated text color
-                                marginBottom: "1rem", // Adjusted for spacing
+                                marginBottom: "1rem",
                             }}
                         >
                             <strong>Role:</strong> UX Researcher, UX/UI Designer
@@ -113,6 +109,25 @@ const Portfolio: React.FC = () => {
                             <strong>Toolkit:</strong> Figma, FigJam, Pencil and paper
                         </Typography>
                     </Box>
+                    {/* Learn More Button */}
+                    <Button
+                            variant="contained"
+                            sx={{
+                                backgroundColor: "#000000", // Dark purple button
+                                color: "#FFFFFF",
+                                textTransform: "none",
+                                fontSize: "1rem",
+                                borderRadius: "25px",
+                                padding: "0.5rem 2rem",
+                                width: "20%",
+                                marginTop: "1.5rem", // Add spacing
+                                "&:hover": { backgroundColor: "#6C3483" }, // Hover color
+                            }}
+                            component={Link}
+                            to="/misspoppins" // Link to MissPoppins.tsx
+                        >
+                            Learn More
+                        </Button>
                 </CardContent>
 
                 {/* Image Section */}
