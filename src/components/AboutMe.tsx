@@ -24,6 +24,7 @@ const AboutMe: React.FC = () => {
                     height: "360px",
                     borderRadius: "0", // Square corners
                     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                    marginTop: "8rem",
                 }}
             />
 
@@ -35,10 +36,10 @@ const AboutMe: React.FC = () => {
                 }}
             >
                 <Typography
-                    variant="h4"
+                    variant="h3"
                     sx={{
                         fontWeight: "bold",
-                        marginBottom: "1.5rem",
+                        marginBottom: "5rem",
                         fontFamily: "'Playfair Display', serif", // Updated fontFamily
                     }}
                 >

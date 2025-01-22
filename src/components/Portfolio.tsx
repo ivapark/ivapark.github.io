@@ -18,11 +18,12 @@ const Portfolio: React.FC = () => {
         >
             {/* Section Title */}
             <Typography
-                variant="h4"
+                variant="h3"
                 sx={{
-                    color: "#4A2040", // Dark purple
-                    fontWeight: "normal", // Remove bold
-                    marginBottom: "2rem",
+                    color: "#000000", // Dark purple
+                    fontWeight: "bold", // Remove bold
+                    marginTop: "3rem",
+                    marginBottom: "3rem",
                 }}
             >
                 My Work
@@ -38,7 +39,6 @@ const Portfolio: React.FC = () => {
                     backgroundColor: "#FFFFFF", // White card background
                     padding: "3rem",
                     borderRadius: "25px",
-                    boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.1)",
                     maxWidth: "1200px",
                     width: "100%",
                 }}
@@ -54,7 +54,7 @@ const Portfolio: React.FC = () => {
                     }}
                 >
                     <Typography
-                        variant="h5"
+                        variant="h4"
                         sx={{
                             color: "#4F0D81", // Updated color
                             fontWeight: "bold",
@@ -77,6 +77,7 @@ const Portfolio: React.FC = () => {
                             backgroundColor: "#FDF3FD", // Updated background color
                             padding: "1.5rem",
                             borderRadius: "8px",
+                            boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.2)",
                             marginTop: "1rem", // Add spacing from the subtitle
                         }}
                     >
@@ -109,6 +110,7 @@ const Portfolio: React.FC = () => {
                             <strong>Toolkit:</strong> Figma, FigJam, Pencil and paper
                         </Typography>
                     </Box>
+
                     {/* Learn More Button */}
                     <Button
                             variant="contained"
@@ -119,7 +121,9 @@ const Portfolio: React.FC = () => {
                                 fontSize: "1rem",
                                 borderRadius: "25px",
                                 padding: "0.5rem 2rem",
-                                width: "20%",
+                                width: "25%",
+                                alignSelf: "center",
+                                boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.5)",
                                 marginTop: "1.5rem", // Add spacing
                                 "&:hover": { backgroundColor: "#6C3483" }, // Hover color
                             }}
@@ -137,7 +141,7 @@ const Portfolio: React.FC = () => {
                     alt="MissPoppins App Mockup"
                     sx={{
                         maxWidth: "300px",
-                        borderRadius: "25px", // Rounded corners
+                        borderRadius: "35px", // Rounded corners
                         marginLeft: { md: "2rem" }, // Add space on large screens
                         marginTop: { xs: "2rem", md: "0" }, // Add space on small screens
                     }}

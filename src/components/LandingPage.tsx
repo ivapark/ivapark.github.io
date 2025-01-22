@@ -12,6 +12,7 @@ const LandingPage: React.FC = () => {
                 justifyContent: "center", // Center align the content
                 gap: "8rem", // Space between IVA PARK and introduction
                 padding: "0 2rem",
+                marginTop: "3rem",
                 fontFamily: "'Playfair Display', serif", // Updated fontFamily
             }}
         >
@@ -128,7 +129,7 @@ const LandingPage: React.FC = () => {
                     variant="h5"
                     sx={{
                         color: "#000", // Black color
-                        fontWeight: "normal", // Remove bold
+                        fontWeight: "bold", // Remove bold
                         marginBottom: "1rem",
                     }}
                 >

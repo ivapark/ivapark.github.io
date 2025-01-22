@@ -7,5 +7,5 @@ html, body {
     background-repeat: repeat; /* Tile the texture */
     background-size: cover; /* Scale appropriately */
     background-attachment: fixed; /* Keeps background fixed during scrolling */
-    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    font-family: 'Playfair Display', serif; /* Updated font-family */
 }

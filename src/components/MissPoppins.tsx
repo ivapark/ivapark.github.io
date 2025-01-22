@@ -34,11 +34,10 @@ const MissPoppins: React.FC = () => {
                         display: "flex",
                         flexDirection: "column",
                         gap: "1rem",
-                        fontFamily: "'Kufam', sans-serif", // Ensure font is applied here
                     }}
                 >
                     <Typography
-                        variant="h4"
+                        variant="h2"
                         sx={{
                             color: "#4F0D81", // Dark purple
                             fontWeight: "bold",
@@ -53,6 +52,7 @@ const MissPoppins: React.FC = () => {
                         sx={{
                             color: "#6C3483", // Light purple
                             textAlign: "left",
+                            fontSize: "1.5rem",
                         }}
                     >
                         Simplifying Navigation and Boosting User Engagement
@@ -65,7 +65,6 @@ const MissPoppins: React.FC = () => {
                             borderRadius: "12px",
                             marginTop: "2rem",
                             boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.1)",
-                            fontFamily: "'Kufam', sans-serif", // Apply font to content inside
                         }}
                     >
                         <Typography
@@ -122,11 +121,11 @@ const MissPoppins: React.FC = () => {
                     width: "100%",
                     maxWidth: "1200px", // Match the maxWidth of the main container
                     marginTop: "3rem",
-                    fontFamily: "'Kufam', sans-serif", // Apply font here too
+                    fontFamily: "'Playfair Display', serif", // Updated fontFamily
                 }}
             >
                 <Typography
-                    variant="h5"
+                    variant="h3"
                     sx={{
                         color: "#4F0D81", // Dark purple
                         fontWeight: "bold",
@@ -139,11 +138,12 @@ const MissPoppins: React.FC = () => {
 
                 {/* Background Section */}
                 <Typography
-                    variant="h6"
+                    variant="h4"
                     sx={{
                         color: "#000000", // Black text
-                        fontWeight: "normal",
+                        fontWeight: "bold",
                         textAlign: "center",
+                        marginTop: "5rem",
                         marginBottom: "1rem",
                     }}
                 >
@@ -156,15 +156,19 @@ const MissPoppins: React.FC = () => {
                         padding: "5rem",
                         borderRadius: "12px",
                         boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.1)",
+                        marginTop: "1rem",
+                        marginBottom: "1rem",
+                        margin: "0 auto",
+                        maxWidth: "900px",
                     }}
                 >
                     <Typography
                         variant="body1"
                         sx={{
                             color: "#000000",
-                            fontSize: "1rem",
+                            fontSize: "1.3rem",
                             lineHeight: 1.8,
-                            marginLeft: "15rem", // Move text slightly to the right
+                            marginLeft: "5rem", // Move text slightly to the right
                         }}
                     >
                         <strong>MissPoppins</strong> is an app that connects parents with
@@ -189,11 +193,12 @@ const MissPoppins: React.FC = () => {
                 }}
             >
                 <Typography
-                    variant="h5"
+                    variant="h4"
                     sx={{
                         color: "#000000",
-                        fontWeight: "normal",
+                        fontWeight: "bold",
                         textAlign: "center",
+                        marginTop: "2rem",
                         marginBottom: "1rem",
                     }}
                 >
@@ -202,10 +207,14 @@ const MissPoppins: React.FC = () => {
 
                 <Box
                     sx={{
-                        backgroundColor: "#FDF3FD",
-                        padding: "3rem",
+                        backgroundColor: "#F9F5FC",
+                        padding: "5rem",
                         borderRadius: "12px",
                         boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.1)",
+                        marginTop: "1rem",
+                        marginBottom: "1rem",
+                        margin: "0 auto",
+                        maxWidth: "1000px",
                     }}
                 >
                     <Typography
@@ -213,7 +222,7 @@ const MissPoppins: React.FC = () => {
                         sx={{
                             color: "#4F0D81",
                             textAlign: "center",
-                            fontSize: "1.2rem",
+                            fontSize: "1.3rem",
                             marginBottom: "2rem",
                         }}
                     >
@@ -226,6 +235,7 @@ const MissPoppins: React.FC = () => {
                         sx={{
                             color: "#000000",
                             textAlign: "center",
+                            fontSize: "1.3rem",
                             marginBottom: "2rem",
                         }}
                     >
@@ -234,9 +244,9 @@ const MissPoppins: React.FC = () => {
                     <Typography
                         variant="body1"
                         sx={{
-                            color: "#000000",
-                            fontSize: "1rem",
-                            marginLeft: "20rem",
+                            color: "#4F0D81",
+                            fontSize: "1.3rem",
+                            marginLeft: "9rem",
                         }}
                     >
                         <ol>
@@ -252,7 +262,7 @@ const MissPoppins: React.FC = () => {
                     </Typography>
                     <Typography
                             sx={{
-                                fontSize: "0.9rem",
+                                fontSize: "1.3rem",
                                 color: "#000000",
                                 textAlign: "center",
                             }}
@@ -270,15 +280,16 @@ const MissPoppins: React.FC = () => {
                     width: "100%",
                     maxWidth: "1200px",
                     marginTop: "3rem",
-                    fontFamily: "'Kufam', sans-serif", // Ensure font consistency
+                    fontFamily: "'Playfair Display', serif", // Updated fontFamily
                 }}
             >
                 <Typography
-                    variant="h5"
+                    variant="h4"
                     sx={{
                         color: "#000000", // Black text
-                        fontWeight: "normal",
+                        fontWeight: "bold",
                         textAlign: "center",
+                        marginTop: "2rem",
                         marginBottom: "1rem",
                     }}
                 >
@@ -289,8 +300,8 @@ const MissPoppins: React.FC = () => {
                     variant="body1"
                     sx={{
                         color: "#000000",
-                        fontSize: "1rem",
-                        marginLeft: "30rem",
+                        fontSize: "1.3rem",
+                        marginLeft: "28rem",
                         lineHeight: 1.8,
                     }}
                 >
@@ -307,11 +318,11 @@ const MissPoppins: React.FC = () => {
                     width: "100%",
                     maxWidth: "1200px",
                     marginTop: "3rem",
-                    fontFamily: "'Kufam', sans-serif", // Ensure font consistency
+                    fontFamily: "'Playfair Display', serif", // Updated fontFamily
                 }}
             >
                 <Typography
-                    variant="h5"
+                    variant="h4"
                     sx={{
                         color: "#000000", // Black text
                         fontWeight: "normal",
@@ -328,8 +339,9 @@ const MissPoppins: React.FC = () => {
                     alt="Competitive Analysis Table"
                     sx={{
                         width: "100%",
-                        maxWidth: "1200px",
+                        maxWidth: "1000px",
                         borderRadius: "12px",
+                        margin: "0 auto",
                         boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.1)",
                     }}
                 />
@@ -341,7 +353,7 @@ const MissPoppins: React.FC = () => {
                     width: "100%",
                     maxWidth: "1200px",
                     marginTop: "3rem",
-                    fontFamily: "'Kufam', sans-serif", // Ensure font consistency
+                    fontFamily: "'Playfair Display', serif", // Updated fontFamily
                     textAlign: "center",
                 }}
             >
@@ -350,6 +362,7 @@ const MissPoppins: React.FC = () => {
                     sx={{
                         color: "#000000", // Black text
                         fontWeight: "normal",
+                        marginTop: "2rem",
                         marginBottom: "2rem",
                     }}
                 >
@@ -465,16 +478,17 @@ const MissPoppins: React.FC = () => {
                     width: "100%",
                     maxWidth: "1200px", // Match the maxWidth of the main container
                     marginTop: "3rem",
-                    fontFamily: "'Kufam', sans-serif", // Ensure font consistency
+                    fontFamily: "'Playfair Display', serif", // Updated fontFamily
                 }}
             >
                 <Typography
-                    variant="h5"
+                    variant="h4"
                     sx={{
                         color: "#000000", // Black text
                         fontWeight: "normal",
                         textAlign: "center",
-                        marginBottom: "1rem",
+                        marginTop: "3rem",
+                        marginBottom: "2rem",
                     }}
                 >
                     2. User interviews
@@ -483,7 +497,7 @@ const MissPoppins: React.FC = () => {
                 <Box
                     sx={{
                         marginLeft: "25rem", // Add some left margin for visual alignment
-                        fontFamily: "'Kufam', sans-serif",
+                        fontFamily: "'Playfair Display', serif", // Updated fontFamily
                     }}
                 >
                     <ul style={{ marginLeft: "1rem" }}>
@@ -503,7 +517,7 @@ const MissPoppins: React.FC = () => {
                     width: "100%",
                     maxWidth: "1200px", // Match the maxWidth of the main container
                     marginTop: "3rem",
-                    fontFamily: "'Kufam', sans-serif", // Ensure font consistency
+                    fontFamily: "'Playfair Display', serif", // Updated fontFamily
                 }}
             >
                 <Typography
@@ -512,6 +526,7 @@ const MissPoppins: React.FC = () => {
                         color: "#000000", // Black text
                         fontWeight: "normal",
                         textAlign: "center", // Center align the title
+                        marginTop: "2rem",
                         marginBottom: "1rem",
                     }}
                 >
@@ -713,14 +728,14 @@ const MissPoppins: React.FC = () => {
                     width: "100%",
                     maxWidth: "1200px", // Match the maxWidth of the container
                     marginTop: "3rem",
-                    fontFamily: "'Kufam', sans-serif", // Apply consistent font
+                    fontFamily: "'Playfair Display', serif", // Updated fontFamily
                 }}
             >
                 <Typography
                     variant="h5"
                     sx={{
                         color: "#000000", // Black text
-                        fontWeight: "bold",
+                        fontWeight: "normal",
                         textAlign: "center", // Center align the title
                         marginBottom: "1rem",
                     }}
@@ -1023,11 +1038,12 @@ const MissPoppins: React.FC = () => {
                 }}
             >
                 <Typography
-                    variant="h5"
+                    variant="h4"
                     sx={{
                         color: "#000000", // Black text
                         fontWeight: "bold",
                         textAlign: "center",
+                        marginTop: "4rem",
                         marginBottom: "2rem",
                     }}
                 >
@@ -1332,7 +1348,7 @@ const MissPoppins: React.FC = () => {
             {/* Key Insights and How Might We Statements */}
             <Box sx={{ marginTop: "40px" }}>
                 <Typography
-                variant="h5"
+                variant="h4"
                 sx={{ fontWeight: "bold", marginBottom: "20px", textAlign: "center" }}
                 >
                 Turning Key Insights into How Might We Statements
@@ -1414,7 +1430,7 @@ const MissPoppins: React.FC = () => {
                     }}
                 >
                     <Typography
-                        variant="h5"
+                        variant="h4"
                         sx={{
                             fontWeight: "bold",
                             marginBottom: "20px",
@@ -2254,18 +2270,18 @@ const MissPoppins: React.FC = () => {
             >
                 {/* Section Title */}
                 <Typography
-                    variant="h4"
+                    variant="h3"
                     sx={{
                         fontWeight: "bold",
-                        color: "#000000",
-                        textAlign: "center",
+                        color: "#4F0D81",
+                        textAlign: "left",
                         marginBottom: "2rem",
                     }}
                 >
                     UX Design
                 </Typography>
                 <Typography
-                    variant="body1"
+                    variant="h4"
                     sx={{
                         fontSize: "1.5rem",
                         fontWeight: "normal",
@@ -2333,7 +2349,7 @@ const MissPoppins: React.FC = () => {
             >
                 {/* Section Title */}
                 <Typography
-                    variant="body1"
+                    variant="h4"
                     sx={{
                         fontSize: "1.5rem",
                         fontWeight: "normal",
