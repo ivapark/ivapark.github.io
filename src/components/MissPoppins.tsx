@@ -13,7 +13,7 @@ const MissPoppins: React.FC = () => {
                 flexDirection: "column",
                 alignItems: "center",
                 gap: "2rem",
-                fontFamily: "'Playfair Display', serif", // Updated fontFamily
+                fontFamily: "'Poppins', sans-serif", // Set Poppins as the primary font
             }}
         >
             {/* Main Section */}
@@ -686,6 +686,7 @@ const MissPoppins: React.FC = () => {
                             borderRadius: "12px",
                             textAlign: "center",
                             boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.1)",
+                            gridColumn: { md: "2 / 3"},
                         }}
                     >
                         <Typography
@@ -707,6 +708,7 @@ const MissPoppins: React.FC = () => {
                             borderRadius: "12px",
                             textAlign: "center",
                             boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.1)",
+                            gridColumn: { md: "3 / 4" },
                         }}
                     >
                         <Typography
@@ -727,7 +729,7 @@ const MissPoppins: React.FC = () => {
                 sx={{
                     width: "100%",
                     maxWidth: "1200px", // Match the maxWidth of the container
-                    marginTop: "3rem",
+                    marginTop: "5rem",
                     fontFamily: "'Playfair Display', serif", // Updated fontFamily
                 }}
             >
@@ -1062,7 +1064,7 @@ const MissPoppins: React.FC = () => {
                         {/* First Row */}
                         <Box
                             sx={{
-                                backgroundColor: "#FBE9E9", // Light red background
+                                backgroundColor: "#FFD3D3", // Light red background
                                 borderRadius: "12px",
                                 padding: "1.5rem",
                                 boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
@@ -1108,7 +1110,7 @@ const MissPoppins: React.FC = () => {
                         {/* First Row */}
                         <Box
                             sx={{
-                                backgroundColor: "#AFB7F0", // Light blue background
+                                backgroundColor: "#C3C9F1", // Light blue background
                                 borderRadius: "12px",
                                 padding: "1.5rem",
                                 boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
@@ -1344,69 +1346,120 @@ const MissPoppins: React.FC = () => {
                 </Box>
             </Box>
 
+            
+            
 
-            {/* Key Insights and How Might We Statements */}
-            <Box sx={{ marginTop: "40px" }}>
-                <Typography
+            {/* Turning Key Insights into How Might We Statements */}
+            <Box sx={{ marginTop: "40px", padding: "0 16px" }}>
+            <Typography
                 variant="h4"
-                sx={{ fontWeight: "bold", marginBottom: "20px", textAlign: "center" }}
-                >
+                sx={{
+                    fontWeight: "bold",
+                    marginTop: "50px",
+                    marginBottom: "20px",
+                    textAlign: "center",
+                }}
+            >
                 Turning Key Insights into How Might We Statements
-                </Typography>
-                <Grid container spacing={2}>
+            </Typography>
+
+            {/* Insights and How Might We Container */}
+            <Box
+                sx={{
+                    display: "flex",
+                    flexDirection: { xs: "column", md: "row" }, // Stack on small screens, side by side on larger screens
+                    gap: "16px", // Spacing between columns
+                    maxWidth: "1200px", // Limit total width to 1200px
+                    margin: "0 auto", // Center the container
+                    alignItems: "stretch",
+                }}
+            >
                 {/* Insights Column */}
-                <Grid item xs={12} md={6}>
-                    <Card sx={{ backgroundColor: "#E3F2FD", borderRadius: "10px" }}>
-                    <CardContent>
-                        <Typography variant="body1" sx={{ marginBottom: "10px" }}>
-                        • Flexibility in rescheduling appointments and reliable,
-                        curated resources are essential.
-                        </Typography>
-                        <Typography variant="body1" sx={{ marginBottom: "10px" }}>
-                        • Many prefer pay-per-session models or subscription options
-                        depending on the frequency of use.
-                        </Typography>
-                        <Typography variant="body1" sx={{ marginBottom: "10px" }}>
-                        • Unclear navigation and scattered resources are common
-                        frustrations.
-                        </Typography>
-                        <Typography variant="body1">
-                        • Most parents are open to mentorship opportunities but
-                        emphasize the need for trustworthy advice.
-                        </Typography>
-                    </CardContent>
+                <Box
+                    sx={{
+                        flex: 1,
+                    }}
+                >
+                    <Card sx={{ backgroundColor: "#E3F2FD", borderRadius: "10px", height: "100%", }}>
+                        <CardContent>
+                            <Typography
+                                variant="body1"
+                                sx={{ marginBottom: "10px" }}
+                            >
+                                • Flexibility in rescheduling appointments and reliable,
+                                curated resources are essential.
+                            </Typography>
+                            <Typography
+                                variant="body1"
+                                sx={{ marginBottom: "10px" }}
+                            >
+                                • Many prefer pay-per-session models or subscription
+                                options depending on the frequency of use.
+                            </Typography>
+                            <Typography
+                                variant="body1"
+                                sx={{ marginBottom: "10px" }}
+                            >
+                                • Unclear navigation and scattered resources are common
+                                frustrations.
+                            </Typography>
+                            <Typography variant="body1">
+                                • Most parents are open to mentorship opportunities but
+                                emphasize the need for trustworthy advice.
+                            </Typography>
+                        </CardContent>
                     </Card>
-                </Grid>
+                </Box>
 
                 {/* How Might We Column */}
-                <Grid item xs={12} md={6}>
-                    <Card sx={{ backgroundColor: "#FFF3E0", borderRadius: "10px" }}>
-                    <CardContent>
-                        <Typography variant="body1" sx={{ marginBottom: "10px" }}>
-                        • How might we create a platform that offers{" "}
-                        <strong>flexibility in rescheduling appointments</strong> to
-                        accommodate the busy schedules of parents?
-                        </Typography>
-                        <Typography variant="body1" sx={{ marginBottom: "10px" }}>
-                        • How might we{" "}
-                        <strong>design a package or session model</strong> that feels
-                        intuitive and manageable for users, ensuring they aren't
-                        overwhelmed by options?
-                        </Typography>
-                        <Typography variant="body1" sx={{ marginBottom: "10px" }}>
-                        • How might we design a navigation system that{" "}
-                        <strong>simplifies access to resources</strong> and eliminates
-                        user frustration?
-                        </Typography>
-                        <Typography variant="body1">
-                        • How might we <strong>build a community</strong> that ensures
-                        the advice shared is trustworthy and credible?
-                        </Typography>
-                    </CardContent>
+                <Box
+                    sx={{
+                        flex: 1,
+                    }}
+                >
+                    <Card sx={{ backgroundColor: "#FFF3E0", borderRadius: "10px", height: "100%", }}>
+                        <CardContent>
+                            <Typography
+                                variant="body1"
+                                sx={{ marginBottom: "10px" }}
+                            >
+                                • How might we create a platform that offers{" "}
+                                <strong>flexibility in rescheduling appointments</strong>{" "}
+                                to accommodate the busy schedules of parents?
+                            </Typography>
+                            <Typography
+                                variant="body1"
+                                sx={{ marginBottom: "10px" }}
+                            >
+                                • How might we{" "}
+                                <strong>design a package or session model</strong> that
+                                feels intuitive and manageable for users, ensuring they
+                                aren't overwhelmed by options?
+                            </Typography>
+                            <Typography
+                                variant="body1"
+                                sx={{ marginBottom: "10px" }}
+                            >
+                                • How might we design a navigation system that{" "}
+                                <strong>simplifies access to resources</strong> and
+                                eliminates user frustration?
+                            </Typography>
+                            <Typography variant="body1">
+                                • How might we <strong>build a community</strong> that
+                                ensures the advice shared is trustworthy and credible?
+                            </Typography>
+                        </CardContent>
                     </Card>
-                </Grid>
-                </Grid>
+                </Box>
             </Box>
+
+
+
+
+
+
+            
+        </Box>
 
             {/* Answering How Might We Statements (Design Process) */}
             
@@ -1433,6 +1486,7 @@ const MissPoppins: React.FC = () => {
                         variant="h4"
                         sx={{
                             fontWeight: "bold",
+                            marginTop: "4rem",
                             marginBottom: "20px",
                             textAlign: "center",
                         }}
@@ -1443,7 +1497,7 @@ const MissPoppins: React.FC = () => {
                     {/* First Big Pink Card */}
                     <Box
                         sx={{
-                            backgroundColor: "#FFF3FF", // Light pink
+                            backgroundColor: "#FFFCFF", // Light pink
                             padding: "2rem",
                             borderRadius: "12px",
                             marginBottom: "2rem",
@@ -1454,152 +1508,173 @@ const MissPoppins: React.FC = () => {
                         <Typography
                             variant="body1"
                             sx={{
-                                fontSize: "1.1rem",
+                                fontSize: "1.4rem",
                                 fontWeight: "bold",
-                                color: "#000",
-                                marginBottom: "2rem",
+                                color: "#933B3B",
+                                marginTop: "2rem",
+                                marginBottom: "3rem",
+                                textAlign: "Center",
                             }}
                         >
                             How might we create a platform that offers flexibility in rescheduling
                             appointments to accommodate the busy schedules of parents?
                         </Typography>
 
-                        {/* Grid for Yellow and White Cards */}
-                        <Grid container spacing={4}>
-                            {/* Row 1 */}
-                            <Grid item xs={12} md={6}>
-                                <Card
-                                    sx={{
-                                        backgroundColor: "#FFFBEF", // Light yellow
-                                        borderRadius: "12px",
-                                        padding: "1rem",
-                                        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                                        height: "100%",
-                                    }}
-                                >
-                                    <CardContent>
-                                        <Typography
-                                            variant="body1"
-                                            sx={{
-                                                fontWeight: "bold",
-                                                fontSize: "1rem",
-                                                marginBottom: "1rem",
-                                            }}
-                                        >
-                                            1. Integrate a scheduling calendar
-                                        </Typography>
-                                        <Typography
-                                            variant="body2"
-                                            sx={{ color: "#000000", lineHeight: "1.6" }}
-                                        >
-                                            Option that allows users to view, manage, and reschedule their
-                                            appointments seamlessly.
-                                        </Typography>
-                                    </CardContent>
-                                </Card>
-                            </Grid>
-                            <Grid item xs={12} md={6}>
-                                <Card
-                                    sx={{
-                                        backgroundColor: "#FFFFFF", // White
-                                        borderRadius: "12px",
-                                        padding: "1rem",
-                                        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                                        height: "100%",
-                                    }}
-                                >
-                                    <CardContent>
-                                        <Typography
-                                            variant="body2"
-                                            sx={{
-                                                color: "#000000",
-                                                fontSize: "0.9rem",
-                                                lineHeight: "1.6",
-                                            }}
-                                        >
-                                            Currently, the app lacks a scheduling feature, requiring users
-                                            to communicate with the coach via chat after purchasing a
-                                            package, which is inconvenient for both parties.
-                                            <br />
-                                            <br />
-                                            Adding a scheduling calendar with flexible rescheduling
-                                            capabilities will streamline the process and reduce effort for
-                                            both users and coaches.
-                                        </Typography>
-                                    </CardContent>
-                                </Card>
-                            </Grid>
+                        {/* Container for Yellow and White Cards */}
+                        <Box
+                            sx={{
+                                display: "flex",
+                                flexDirection: { xs: "column", md: "row" }, // Stack on small screens, side-by-side on larger screens
+                                gap: "1.5rem", // Spacing between cards
+                            }}
+                        >
+                            {/* Left Column: Yellow Card */}
+                            <Card
+                                sx={{
+                                    backgroundColor: "#FFFBEF", // Light yellow
+                                    borderRadius: "12px",
+                                    padding: "1rem",
+                                    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                                    flex: 1,
+                                    maxWidth: 400,
+                                }}
+                            >
+                                <CardContent>
+                                    <Typography
+                                        variant="body1"
+                                        sx={{
+                                            fontWeight: "bold",
+                                            fontSize: "1rem",
+                                            marginBottom: "1rem",
+                                        }}
+                                    >
+                                        1. Integrate a scheduling calendar
+                                    </Typography>
+                                    <Typography
+                                        variant="body2"
+                                        sx={{ color: "#000000", lineHeight: "1.6" }}
+                                    >
+                                        Option that allows users to view, manage, and reschedule their
+                                        appointments seamlessly.
+                                    </Typography>
+                                </CardContent>
+                            </Card>
 
-                            {/* Row 2 */}
-                            <Grid item xs={12} md={6}>
-                                <Card
-                                    sx={{
-                                        backgroundColor: "#FFFBEF", // Light yellow
-                                        borderRadius: "12px",
-                                        padding: "1rem",
-                                        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                                        height: "100%",
-                                    }}
-                                >
-                                    <CardContent>
-                                        <Typography
-                                            variant="body1"
-                                            sx={{
-                                                fontWeight: "bold",
-                                                fontSize: "1rem",
-                                                marginBottom: "1rem",
-                                            }}
-                                        >
-                                            2. Include real-time availability updates
-                                        </Typography>
-                                        <Typography
-                                            variant="body2"
-                                            sx={{ color: "#000000", lineHeight: "1.6" }}
-                                        >
-                                            From consultants and automated reminders for upcoming sessions.
-                                        </Typography>
-                                    </CardContent>
-                                </Card>
-                            </Grid>
-                            <Grid item xs={12} md={6}>
-                                <Card
-                                    sx={{
-                                        backgroundColor: "#FFFFFF", // White
-                                        borderRadius: "12px",
-                                        padding: "1rem",
-                                        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                                        height: "100%",
-                                    }}
-                                >
-                                    <CardContent>
-                                        <Typography
-                                            variant="body2"
-                                            sx={{
-                                                color: "#000000",
-                                                fontSize: "0.9rem",
-                                                lineHeight: "1.6",
-                                            }}
-                                        >
-                                            Providing real-time availability updates, along with reminders,
-                                            will allow parents to reschedule directly through the app
-                                            without needing to contact support.
-                                            <br />
-                                            <br />
-                                            This feature will enable users to easily select the earliest
-                                            available slots or choose specific timeframes that best suit
-                                            their schedules.
-                                        </Typography>
-                                    </CardContent>
-                                </Card>
-                            </Grid>
-                        </Grid>
+                            {/* Right Column: White Card */}
+                            <Card
+                                sx={{
+                                    backgroundColor: "#FFF2FC", // White
+                                    borderRadius: "12px",
+                                    padding: "1rem",
+                                    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                                    flex: 1,
+                                }}
+                            >
+                                <CardContent>
+                                    <Typography
+                                        variant="body2"
+                                        sx={{
+                                            color: "#000000",
+                                            fontSize: "0.9rem",
+                                            lineHeight: "1.6",
+                                        }}
+                                    >
+                                        Currently, the app lacks a scheduling feature, requiring users
+                                        to communicate with the coach via chat after purchasing a
+                                        package, which is inconvenient for both parties.
+                                        <br />
+                                        <br />
+                                        Adding a scheduling calendar with flexible rescheduling
+                                        capabilities will streamline the process and reduce effort for
+                                        both users and coaches.
+                                    </Typography>
+                                </CardContent>
+                            </Card>
+                        </Box>
+
+                        {/* Second Row */}
+                        <Box
+                            sx={{
+                                display: "flex",
+                                flexDirection: { xs: "column", md: "row" }, // Stack on small screens, side-by-side on larger screens
+                                gap: "1.5rem", // Spacing between cards
+                                marginTop: "2rem", // Add spacing between rows
+                            }}
+                        >
+                            {/* Left Column: Yellow Card */}
+                            <Card
+                                sx={{
+                                    backgroundColor: "#FFFBEF", // Light yellow
+                                    borderRadius: "12px",
+                                    padding: "1rem",
+                                    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                                    flex: 1,
+                                    maxWidth: 400,
+                                }}
+                            >
+                                <CardContent>
+                                    <Typography
+                                        variant="body1"
+                                        sx={{
+                                            fontWeight: "bold",
+                                            fontSize: "1rem",
+                                            marginBottom: "1rem",
+                                        }}
+                                    >
+                                        2. Include real-time availability updates
+                                    </Typography>
+                                    <Typography
+                                        variant="body2"
+                                        sx={{ color: "#000000", lineHeight: "1.6" }}
+                                    >
+                                        From consultants and automated reminders for upcoming sessions.
+                                    </Typography>
+                                </CardContent>
+                            </Card>
+
+                            {/* Right Column: White Card */}
+                            <Card
+                                sx={{
+                                    backgroundColor: "#FFF2FC", // White
+                                    borderRadius: "12px",
+                                    padding: "1rem",
+                                    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                                    flex: 1,
+                                }}
+                            >
+                                <CardContent>
+                                    <Typography
+                                        variant="body2"
+                                        sx={{
+                                            color: "#000000",
+                                            fontSize: "0.9rem",
+                                            lineHeight: "1.6",
+                                        }}
+                                    >
+                                        Providing real-time availability updates, along with reminders,
+                                        will allow parents to reschedule directly through the app
+                                        without needing to contact support.
+                                        <br />
+                                        <br />
+                                        This feature will enable users to easily select the earliest
+                                        available slots or choose specific timeframes that best suit
+                                        their schedules.
+                                    </Typography>
+                                </CardContent>
+                            </Card>
+                        </Box>
                     </Box>
+
                     
+
+
+
+
 
                     {/* Second Big Pink Card */}
                     <Box
                         sx={{
-                            backgroundColor: "#FFF3FF", // Light pink
+                            backgroundColor: "#FFFCFF", // Light pink
                             padding: "2rem",
                             borderRadius: "12px",
                             marginTop: "5rem",
@@ -1611,10 +1686,12 @@ const MissPoppins: React.FC = () => {
                         <Typography
                             variant="body1"
                             sx={{
-                                fontSize: "1.1rem",
+                                fontSize: "1.4rem",
                                 fontWeight: "bold",
-                                color: "#000",
-                                marginBottom: "2rem",
+                                color: "#933B3B",
+                                marginTop: "2rem",
+                                marginBottom: "3rem",
+                                textAlign: "Center",
                             }}
                         >
                             How might we design a package or session model that feels intuitive and
@@ -1681,62 +1758,66 @@ const MissPoppins: React.FC = () => {
                             </Typography>
                         </Box>
 
-                        {/* Grid for White Card and Image */}
-                        <Grid container spacing={4}>
-                            <Grid item xs={12} md={6}>
-                                <Card
-                                    sx={{
-                                        backgroundColor: "#FFFFFF", // White
-                                        borderRadius: "12px",
-                                        padding: "1.5rem",
-                                        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                                        marginBottom: "6rem",
-                                        height: "50%",
-                                    }}
-                                >
-                                    <CardContent>
-                                        <Typography
-                                            variant="body2"
-                                            sx={{
-                                                color: "#000000",
-                                                fontSize: "0.9rem",
-                                                lineHeight: "1.6",
-                                            }}
-                                        >
-                                            The app's current package page is cluttered and disorganized,
-                                            presenting users with a wide range of session numbers and price
-                                            points.
-                                            <br />
-                                            <br />
-                                            This <strong>lack of uniformity</strong> leads to confusion
-                                            and makes selecting a package overwhelming.
-                                        </Typography>
-                                    </CardContent>
-                                </Card>
-                            </Grid>
-                            <Grid item xs={12} md={6}>
-                                <CardMedia
-                                    component="img"
-                                    image={require("../assets/image11.png")} 
-                                    alt="Current Package Page"
-                                    sx={{
-                                        borderRadius: "12px",
-                                        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                                        width: "100%",
-                                        maxWidth: "300px", //make image smaller
-                                        margin: "0 auto",
-                                        marginBottom: "3rem",
-                                    }}
-                                />
-                            </Grid>
-                        </Grid>
-
-
-                        {/* Add New White Card */}
-                        
+                        {/* White Card and Image Section */}
                         <Box
                             sx={{
-                                backgroundColor: "#FFFFFF", // White background
+                                display: "flex",
+                                flexDirection: { xs: "column", md: "row" }, // Stack on small screens
+                                gap: "2rem",
+                                marginBottom: "2rem",
+                            }}
+                        >
+                            {/* White Card */}
+                            <Card
+                                sx={{
+                                    backgroundColor: "#FFF2FC", // White
+                                    borderRadius: "12px",
+                                    padding: "1.5rem",
+                                    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                                    margin: "auto",
+                                    maxWidth: 700,
+                                    flex: 1,
+                                }}
+                            >
+                                <CardContent>
+                                    <Typography
+                                        variant="body2"
+                                        sx={{
+                                            color: "#000000",
+                                            fontSize: "0.9rem",
+                                            lineHeight: "1.6",
+                                        }}
+                                    >
+                                        The app's current package page is cluttered and disorganized,
+                                        presenting users with a wide range of session numbers and price
+                                        points.
+                                        <br />
+                                        <br />
+                                        This <strong>lack of uniformity</strong> leads to confusion
+                                        and makes selecting a package overwhelming.
+                                    </Typography>
+                                </CardContent>
+                            </Card>
+
+                            {/* Image */}
+                            <CardMedia
+                                component="img"
+                                image={require("../assets/image11.png")}
+                                alt="Current Package Page"
+                                sx={{
+                                    borderRadius: "12px",
+                                    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                                    width: "100%",
+                                    maxWidth: "300px", // Make image smaller
+                                    margin: "auto",
+                                }}
+                            />
+                        </Box>
+
+                        {/* New White Card */}
+                        <Box
+                            sx={{
+                                backgroundColor: "#FFF2FC", // White background
                                 borderRadius: "12px",
                                 padding: "3rem",
                                 marginBottom: "2rem",
@@ -1759,371 +1840,381 @@ const MissPoppins: React.FC = () => {
                         </Box>
 
                         {/* Two Side-by-Side Cards */}
-                        <Grid container spacing={4}>
-                            <Grid item xs={12} md={6}>
-                                <Box
+                        <Box
+                            sx={{
+                                display: "flex",
+                                flexDirection: { xs: "column", md: "row" }, // Stack on small screens
+                                gap: "2rem",
+                            }}
+                        >
+                            {/* Yellow Card */}
+                            <Box
+                                sx={{
+                                    backgroundColor: "#FFFBEF", // Light yellow
+                                    borderRadius: "12px",
+                                    padding: "1.5rem",
+                                    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                                    flex: 1,
+                                    maxWidth: 400,
+                                }}
+                            >
+                                <Typography
+                                    variant="body2"
                                     sx={{
-                                        backgroundColor: "#FFFBEF", // Light yellow
-                                        borderRadius: "12px",
-                                        padding: "1.5rem",
-                                        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                                        height: "100%",
+                                        color: "#000000",
+                                        fontSize: "0.9rem",
+                                        fontWeight: "bold",
+                                        lineHeight: "1.6",
                                     }}
                                 >
-                                    <Typography
-                                        variant="body2"
-                                        sx={{
-                                            color: "#000000",
-                                            fontSize: "0.9rem",
-                                            fontWeight: "bold",
-                                            lineHeight: "1.6",
-                                        }}
-                                    >
-                                        2. Highlight popular or recommended packages to provide
-                                        decision-making cues and reduce the feeling of being overwhelmed.
-                                    </Typography>
-                                </Box>
-                            </Grid>
-                            <Grid item xs={12} md={6}>
-                                <Box
+                                    2. Highlight popular or recommended packages to provide
+                                    decision-making cues and reduce the feeling of being overwhelmed.
+                                </Typography>
+                            </Box>
+
+                            {/* White Card */}
+                            <Box
+                                sx={{
+                                    backgroundColor: "#FFF2FC", // White background
+                                    borderRadius: "12px",
+                                    padding: "1.5rem",
+                                    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                                    flex: 1,
+                                }}
+                            >
+                                <Typography
+                                    variant="body2"
                                     sx={{
-                                        backgroundColor: "#FFFFFF", // White background
-                                        borderRadius: "12px",
-                                        padding: "1.5rem",
-                                        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                                        height: "100%",
+                                        color: "#000000",
+                                        fontSize: "0.9rem",
+                                        lineHeight: "1.6",
                                     }}
                                 >
-                                    <Typography
-                                        variant="body2"
-                                        sx={{
-                                            color: "#000000",
-                                            fontSize: "0.9rem",
-                                            lineHeight: "1.6",
-                                        }}
-                                    >
-                                        Helps user feel more confident in their choice and reduces the
-                                        time and effort spent evaluating all available options.
-                                        <br />
-                                        <br />
-                                        This guidance <strong>minimizes decision fatigue</strong> and
-                                        simplifies the selection process.
-                                    </Typography>
-                                </Box>
-                            </Grid>
-                        </Grid>
+                                    Helps user feel more confident in their choice and reduces the
+                                    time and effort spent evaluating all available options.
+                                    <br />
+                                    <br />
+                                    This guidance <strong>minimizes decision fatigue</strong> and
+                                    simplifies the selection process.
+                                </Typography>
+                            </Box>
+                        </Box>
                     </Box>
+
+
+
+
+
 
 
                     {/* Third Big Pink Card */}
                     <Box
+                    sx={{
+                        backgroundColor: "#FFFCFF", // Light pink
+                        padding: "2rem",
+                        borderRadius: "12px",
+                        marginTop: "5rem",
+                        marginBottom: "2rem",
+                        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                    }}
+                >
+                    {/* Pink Card Content */}
+                    <Typography
+                        variant="body1"
                         sx={{
-                            backgroundColor: "#FFF3FF", // Light pink
-                            padding: "2rem",
-                            borderRadius: "12px",
-                            marginTop: "5rem",
-                            marginBottom: "2rem",
-                            boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                            fontSize: "1.4rem",
+                            fontWeight: "bold",
+                            color: "#933B3B",
+                            marginTop: "2rem",
+                            marginBottom: "3rem",
+                            textAlign: "Center",
                         }}
                     >
-                        {/* Pink Card Content */}
-                        <Typography
-                            variant="body1"
-                            sx={{
-                                fontSize: "1.1rem",
-                                fontWeight: "bold",
-                                color: "#000",
-                                marginBottom: "2rem",
-                            }}
-                        >
-                            How might we design a navigation system that simplifies 
-                            access to resources and eliminates user frustration?
-                        </Typography>
+                        How might we design a navigation system that simplifies access to resources and eliminates user frustration?
+                    </Typography>
 
-                        {/* Two Side-by-Side Cards */}
-                        <Grid container spacing={4}>
-                            <Grid item xs={12} md={6}>
-                                <Box
-                                    sx={{
-                                        backgroundColor: "#FFFBEF", // Light yellow
-                                        borderRadius: "12px",
-                                        padding: "1.5rem",
-                                        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                                        height: "100%",
-                                    }}
-                                >
-                                    <Typography
-                                        variant="body2"
-                                        sx={{
-                                            color: "#000000",
-                                            fontSize: "0.9rem",
-                                            fontWeight: "bold",
-                                            lineHeight: "1.6",
-                                        }}
-                                    >
-                                        1. Introduce a Generative AI-powered search bar that allows users
-                                        to type natural language queries and receive tailored recommendations 
-                                        for articles, sessions, or features.
-                                    </Typography>
-                                </Box>
-                            </Grid>
-                            <Grid item xs={12} md={6}>
-                                <Box
-                                    sx={{
-                                        backgroundColor: "#FFFFFF", // White background
-                                        borderRadius: "12px",
-                                        marginBottom: "3rem",
-                                        padding: "1.5rem",
-                                        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                                        height: "100%",
-                                    }}
-                                >
-                                    <Typography
-                                        variant="body2"
-                                        sx={{
-                                            color: "#000000",
-                                            fontSize: "0.9rem",
-                                            lineHeight: "1.6",
-                                        }}
-                                    >
-                                        For example, users can ask questions like "Which coaching 
-                                        package is best for first-time parents?" "What are some quick 
-                                        tips for calming a crying baby?" or "Can you help me find 
-                                        articles on toddler sleep training?"
-                                        <br />
-                                        <br />
-                                        The AI will provide responses based on the app's verified 
-                                        expert-reviewed content, ensuring accurate and reliable 
-                                        information.
-                                    </Typography>
-                                </Box>
-                            </Grid>
-                        </Grid>
-
-                        {/* Yellow Card */}
+                    {/* Two Side-by-Side Cards */}
+                    <Box
+                        sx={{
+                            display: "flex",
+                            flexDirection: { xs: "column", md: "row" }, // Stack on small screens
+                            gap: "2rem",
+                            marginBottom: "2rem",
+                        }}
+                    >
                         <Box
                             sx={{
                                 backgroundColor: "#FFFBEF", // Light yellow
                                 borderRadius: "12px",
                                 padding: "1.5rem",
-                                marginTop: "2rem",
-                                marginBottom: "2rem",
                                 boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                                flex: 1,
+                                maxWidth: 400,
                             }}
                         >
-                            <Typography
-                                variant="body1"
-                                sx={{
-                                    fontWeight: "bold",
-                                    marginBottom: "1rem",
-                                    fontSize: "1rem",
-                                }}
-                            >
-                                2. Simplify the information architecture by reducing unnecessary 
-                                clicks and pages. Implement a sliding sidebar menu for quick access 
-                                to key categories like resources, appointment scheduling, and session 
-                                packages.
-                            </Typography>
-                        </Box>
-
-                        {/* Add New White Card */}
-                        {/* White Card Containing Images */}
-                        <Box
-                            sx={{
-                                backgroundColor: "#FFFFFF", // White background
-                                borderRadius: "12px",
-                                padding: "2rem",
-                                marginBottom: "2rem",
-                                boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                                position: "relative", // Ensures proper positioning of child elements
-                            }}
-                        >
-                            <Typography
-                                variant="body1"
-                                sx={{
-                                    fontSize: "1rem",
-                                    fontWeight: "bold",
-                                    color: "#000",
-                                    textAlign: "center",
-                                    marginBottom: "2rem",
-                                }}
-                            >
-                                Currently, booking an appointment involves navigating through multiple steps:
-                            </Typography>
-
-                            <Box
-                                sx={{
-                                    position: "relative", // For layering
-                                    display: "flex",
-                                    flexWrap: "wrap",
-                                    justifyContent: "center",
-                                    alignItems: "flex-start",
-                                    gap: "1.5rem",
-                                }}
-                            >
-                                {/* Image 12 */}
-                                <Box sx={{ position: "relative" }}>
-                                    <CardMedia
-                                        component="img"
-                                        image={require("../assets/image12.png")}
-                                        alt="Step 1"
-                                        sx={{
-                                            width: "250px",
-                                            height: "auto",
-                                            borderRadius: "12px",
-                                            boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                                        }}
-                                    />
-                                    <Typography variant="caption" sx={{ textAlign: "center", display: "block", marginTop: "0.5rem" }}>
-                                        1. Selecting one of eight categories
-                                    </Typography>
-                                </Box>
-
-                                {/* Image 13 */}
-                                <Box sx={{ position: "relative", marginLeft: "20px", top: "20px" }}>
-                                    <CardMedia
-                                        component="img"
-                                        image={require("../assets/image13.png")}
-                                        alt="Step 2"
-                                        sx={{
-                                            width: "250px",
-                                            height: "auto",
-                                            borderRadius: "12px",
-                                            boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                                        }}
-                                    />
-                                    <Typography variant="caption" sx={{ textAlign: "center", display: "block", marginTop: "0.5rem" }}>
-                                        2. Choosing the appointment purpose
-                                    </Typography>
-                                </Box>
-
-                                {/* Image 14 */}
-                                <Box sx={{ position: "relative", marginLeft: "20px", top: "40px" }}>
-                                    <CardMedia
-                                        component="img"
-                                        image={require("../assets/image14.png")}
-                                        alt="Step 3"
-                                        sx={{
-                                            width: "250px",
-                                            height: "auto",
-                                            borderRadius: "12px",
-                                            boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                                        }}
-                                    />
-                                    <Typography variant="caption" sx={{ textAlign: "center", display: "block", marginTop: "0.5rem" }}>
-                                        3. Viewing package options
-                                    </Typography>
-                                </Box>
-
-                                {/* Image 15 */}
-                                <Box sx={{ position: "relative", marginTop: "40px" }}>
-                                    <CardMedia
-                                        component="img"
-                                        image={require("../assets/image15.png")}
-                                        alt="Step 4"
-                                        sx={{
-                                            width: "250px",
-                                            height: "auto",
-                                            borderRadius: "12px",
-                                            boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                                        }}
-                                    />
-                                    <Typography variant="caption" sx={{ textAlign: "center", display: "block", marginTop: "0.5rem" }}>
-                                        4. Clicking to see package details
-                                    </Typography>
-                                </Box>
-
-                                {/* Image 16 */}
-                                <Box sx={{ position: "relative", marginLeft: "20px", top: "80px" }}>
-                                    <CardMedia
-                                        component="img"
-                                        image={require("../assets/image16.png")}
-                                        alt="Step 5"
-                                        sx={{
-                                            width: "250px",
-                                            height: "auto",
-                                            borderRadius: "12px",
-                                            boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                                        }}
-                                    />
-                                    <Typography variant="caption" sx={{ textAlign: "center", display: "block", marginTop: "0.5rem" }}>
-                                        5. Navigating to the coach profile
-                                    </Typography>
-                                </Box>
-
-                                {/* Image 17 */}
-                                <Box sx={{ position: "relative", marginLeft: "20px", top: "120px" }}>
-                                    <CardMedia
-                                        component="img"
-                                        image={require("../assets/image17.png")}
-                                        alt="Step 6"
-                                        sx={{
-                                            width: "250px",
-                                            height: "auto",
-                                            borderRadius: "12px",
-                                            boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                                        }}
-                                    />
-                                    <Typography variant="caption" sx={{ textAlign: "center", display: "block", marginTop: "0.5rem" }}>
-                                        6. Accessing the coach's package offerings
-                                    </Typography>
-                                </Box>
-                            </Box>
-
-                            <Typography
-                                variant="body2"
-                                sx={{
-                                    color: "#000",
-                                    textAlign: "center",
-                                    marginTop: "5rem",
-                                    fontSize: "0.9rem",
-                                }}
-                            >
-                                This complex process makes it difficult to find and book information efficiently.
-                            </Typography>
-                        </Box>
-
-                        {/*last white box*/}
-                        <Box
-                            sx={{
-                                backgroundColor: "#FFFFFF", // Light yellow
-                                borderRadius: "12px",
-                                padding: "1.5rem",
-                                marginBottom: "2rem",
-                                boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                            }}
-                        >
-                            <Typography
-                                variant="body1"
-                                sx={{
-                                    fontWeight: "bold",
-                                    marginBottom: "1rem",
-                                    fontSize: "1rem",
-                                }}
-                            >
-                                By consolidating these steps into a sliding sidebar, users can view coach details, 
-                                package information, and session options seamlessly in one place, without the need to click through multiple pages. 
-                            </Typography>
                             <Typography
                                 variant="body2"
                                 sx={{
                                     color: "#000000",
+                                    fontSize: "0.9rem",
                                     fontWeight: "bold",
-                                    marginBottom: "0.5rem",
-                                    fontSize: "1rem",
+                                    lineHeight: "1.6",
                                 }}
                             >
-                                This approach streamlines the process, saving time and reducing frustration.
+                                1. Introduce a Generative AI-powered search bar that allows users to type natural language queries and receive tailored recommendations for articles, sessions, or features.
                             </Typography>
                         </Box>
 
+                        <Box
+                            sx={{
+                                backgroundColor: "#FFF2FC", // White background
+                                borderRadius: "12px",
+                                padding: "1.5rem",
+                                boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                                flex: 1,
+                            }}
+                        >
+                            <Typography
+                                variant="body2"
+                                sx={{
+                                    color: "#000000",
+                                    fontSize: "0.9rem",
+                                    lineHeight: "1.6",
+                                }}
+                            >
+                                For example, users can ask questions like "Which coaching package is best for first-time parents?" "What are some quick tips for calming a crying baby?" or "Can you help me find articles on toddler sleep training?"
+                                <br />
+                                <br />
+                                The AI will provide responses based on the app's verified expert-reviewed content, ensuring accurate and reliable information.
+                            </Typography>
+                        </Box>
                     </Box>
+
+                    {/* Yellow Card */}
+                    <Box
+                        sx={{
+                            backgroundColor: "#FFFBEF", // Light yellow
+                            borderRadius: "12px",
+                            padding: "1.5rem",
+                            marginTop: "2rem",
+                            marginBottom: "2rem",
+                            boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                        }}
+                    >
+                        <Typography
+                            variant="body1"
+                            sx={{
+                                fontWeight: "bold",
+                                marginBottom: "1rem",
+                                fontSize: "1rem",
+                            }}
+                        >
+                            2. Simplify the information architecture by reducing unnecessary clicks and pages. Implement a sliding sidebar menu for quick access to key categories like resources, appointment scheduling, and session packages.
+                        </Typography>
+                    </Box>
+
+                    {/* White Card Containing Images */}
+                    <Box
+                        sx={{
+                            backgroundColor: "#FFFFFF", // White background
+                            borderRadius: "12px",
+                            padding: "2rem",
+                            marginBottom: "2rem",
+                            boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                        }}
+                    >
+                        <Typography
+                            variant="body1"
+                            sx={{
+                                fontSize: "1rem",
+                                fontWeight: "bold",
+                                color: "#000",
+                                textAlign: "center",
+                                marginBottom: "2rem",
+                            }}
+                        >
+                            Currently, booking an appointment involves navigating through multiple steps:
+                        </Typography>
+
+                        {/* Images Layout */}
+                        <Box
+                            sx={{
+                                display: "flex",
+                                flexWrap: "wrap",
+                                justifyContent: "center",
+                                gap: "2rem",
+                            }}
+                        >
+                            {/* Row 1 */}
+                            <Box sx={{ textAlign: "center" }}>
+                                <CardMedia
+                                    component="img"
+                                    image={require("../assets/image12.png")}
+                                    alt="Step 1"
+                                    sx={{
+                                        width: "250px",
+                                        borderRadius: "12px",
+                                        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                                    }}
+                                />
+                                <Typography
+                                    variant="caption"
+                                    sx={{ display: "block", marginTop: "0.5rem" }}
+                                >
+                                    1. Selecting one of eight categories
+                                </Typography>
+                            </Box>
+                            <Box sx={{ textAlign: "center" }}>
+                                <CardMedia
+                                    component="img"
+                                    image={require("../assets/image13.png")}
+                                    alt="Step 2"
+                                    sx={{
+                                        width: "250px",
+                                        borderRadius: "12px",
+                                        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                                    }}
+                                />
+                                <Typography
+                                    variant="caption"
+                                    sx={{ display: "block", marginTop: "0.5rem" }}
+                                >
+                                    2. Choosing the appointment purpose
+                                </Typography>
+                            </Box>
+                            <Box sx={{ textAlign: "center" }}>
+                                <CardMedia
+                                    component="img"
+                                    image={require("../assets/image14.png")}
+                                    alt="Step 3"
+                                    sx={{
+                                        width: "250px",
+                                        borderRadius: "12px",
+                                        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                                    }}
+                                />
+                                <Typography
+                                    variant="caption"
+                                    sx={{ display: "block", marginTop: "0.5rem" }}
+                                >
+                                    3. Viewing package options
+                                </Typography>
+                            </Box>
+
+                            {/* Row 2 */}
+                            <Box sx={{ textAlign: "center" }}>
+                                <CardMedia
+                                    component="img"
+                                    image={require("../assets/image15.png")}
+                                    alt="Step 4"
+                                    sx={{
+                                        width: "250px",
+                                        borderRadius: "12px",
+                                        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                                    }}
+                                />
+                                <Typography
+                                    variant="caption"
+                                    sx={{ display: "block", marginTop: "0.5rem" }}
+                                >
+                                    4. Clicking to see package details
+                                </Typography>
+                            </Box>
+                            <Box sx={{ textAlign: "center" }}>
+                                <CardMedia
+                                    component="img"
+                                    image={require("../assets/image16.png")}
+                                    alt="Step 5"
+                                    sx={{
+                                        width: "250px",
+                                        borderRadius: "12px",
+                                        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                                    }}
+                                />
+                                <Typography
+                                    variant="caption"
+                                    sx={{ display: "block", marginTop: "0.5rem" }}
+                                >
+                                    5. Navigating to the coach profile
+                                </Typography>
+                            </Box>
+                            <Box sx={{ textAlign: "center" }}>
+                                <CardMedia
+                                    component="img"
+                                    image={require("../assets/image17.png")}
+                                    alt="Step 6"
+                                    sx={{
+                                        width: "250px",
+                                        borderRadius: "12px",
+                                        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                                    }}
+                                />
+                                <Typography
+                                    variant="caption"
+                                    sx={{ display: "block", marginTop: "0.5rem" }}
+                                >
+                                    6. Accessing the coach's package offerings
+                                </Typography>
+                            </Box>
+                        </Box>
+
+                        <Typography
+                            variant="body2"
+                            sx={{
+                                color: "#000",
+                                textAlign: "center",
+                                marginTop: "2rem",
+                                fontSize: "0.9rem",
+                            }}
+                        >
+                            This complex process makes it difficult to find and book information efficiently.
+                        </Typography>
+                    </Box>
+
+                    {/* Last White Box */}
+                    <Box
+                        sx={{
+                            backgroundColor: "#FFF2FC",
+                            borderRadius: "12px",
+                            padding: "1.5rem",
+                            marginBottom: "2rem",
+                            boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                        }}
+                    >
+                        <Typography
+                            variant="body1"
+                            sx={{
+                                fontWeight: "bold",
+                                marginBottom: "1rem",
+                                fontSize: "1rem",
+                            }}
+                        >
+                            By consolidating these steps into a sliding sidebar, users can view coach details, package information, and session options seamlessly in one place, without the need to click through multiple pages.
+                        </Typography>
+                        <Typography
+                            variant="body2"
+                            sx={{
+                                color: "#000000",
+                                fontWeight: "bold",
+                                marginBottom: "0.5rem",
+                                fontSize: "1rem",
+                            }}
+                        >
+                            This approach streamlines the process, saving time and reducing frustration.
+                        </Typography>
+                    </Box>
+                </Box>
+
+
+
+
+
 
         
                     {/* Fourth Big Pink Card */}
                     <Box
                         sx={{
-                            backgroundColor: "#FFF3FF", // Light pink
+                            backgroundColor: "#FFFCFF", // Light pink
                             padding: "2rem", // Ensure sufficient padding to contain children
                             borderRadius: "12px",
                             marginTop: "5rem",
@@ -2136,29 +2227,36 @@ const MissPoppins: React.FC = () => {
                         <Typography
                             variant="body1"
                             sx={{
-                                fontSize: "1.1rem",
+                                fontSize: "1.4rem",
                                 fontWeight: "bold",
-                                color: "#000",
-                                marginBottom: "2rem",
+                                color: "#933B3B",
+                                marginTop: "2rem",
+                                marginBottom: "3rem",
                                 textAlign: "center", // Center-align the question
                             }}
                         >
-                            How might we build a community that ensures the 
-                            advice shared is trustworthy and credible?
+                            How might we build a community that ensures the advice shared is trustworthy and credible?
                         </Typography>
 
                         {/* First Two Side-by-Side Cards */}
-                        <Grid container spacing={4}>
-                            <Grid item xs={12} md={6}>
-                                <Box
-                                    sx={{
-                                        backgroundColor: "#FFFBEF", // Light yellow
-                                        borderRadius: "12px",
-                                        padding: "1.5rem",
-                                        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                                        height: "100%",
-                                    }}
-                                >
+                        <Box
+                            sx={{
+                                display: "flex",
+                                flexDirection: { xs: "column", md: "row" }, // Stack on small screens, side-by-side on larger screens
+                                gap: "1.5rem", // Spacing between the cards
+                            }}
+                        >
+                            <Card
+                                sx={{
+                                    backgroundColor: "#FFFBEF", // Light yellow
+                                    borderRadius: "12px",
+                                    padding: "1.5rem",
+                                    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                                    flex: 1, // Equal width for both cards
+                                    maxWidth: 400,
+                                }}
+                            >
+                                <CardContent>
                                     <Typography
                                         variant="body2"
                                         sx={{
@@ -2168,22 +2266,21 @@ const MissPoppins: React.FC = () => {
                                             lineHeight: "1.6",
                                         }}
                                     >
-                                        1. Develop a mentorship community where parents 
-                                        can connect with mentors or peers who have relevant 
-                                        experience.
+                                        1. Develop a mentorship community where parents can connect with mentors or peers who have relevant experience.
                                     </Typography>
-                                </Box>
-                            </Grid>
-                            <Grid item xs={12} md={6}>
-                                <Box
-                                    sx={{
-                                        backgroundColor: "#FFFFFF", // White background
-                                        borderRadius: "12px",
-                                        padding: "1.5rem",
-                                        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                                        height: "100%",
-                                    }}
-                                >
+                                </CardContent>
+                            </Card>
+
+                            <Card
+                                sx={{
+                                    backgroundColor: "#FFF2FC", // White background
+                                    borderRadius: "12px",
+                                    padding: "1.5rem",
+                                    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                                    flex: 1, // Equal width for both cards
+                                }}
+                            >
+                                <CardContent>
                                     <Typography
                                         variant="body2"
                                         sx={{
@@ -2192,30 +2289,35 @@ const MissPoppins: React.FC = () => {
                                             lineHeight: "1.6",
                                         }}
                                     >
-                                        Use a survey system to collect detailed 
-                                        preferences and needs from both mentees 
-                                        and mentors to ensure meaningful matches.
+                                        Use a survey system to collect detailed preferences and needs from both mentees and mentors to ensure meaningful matches.
                                         <br />
                                         <br />
-                                        Offer a rating system for mentors and mentees 
-                                        to maintain quality and trust within the community.
+                                        Offer a rating system for mentors and mentees to maintain quality and trust within the community.
                                     </Typography>
-                                </Box>
-                            </Grid>
-                        </Grid>
+                                </CardContent>
+                            </Card>
+                        </Box>
 
                         {/* Second Two Side-by-Side Cards */}
-                        <Grid container spacing={4} sx={{ marginTop: "2rem" }}> {/* Add margin for spacing */}
-                            <Grid item xs={12} md={6}>
-                                <Box
-                                    sx={{
-                                        backgroundColor: "#FFFBEF", // Light yellow
-                                        borderRadius: "12px",
-                                        padding: "1.5rem",
-                                        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                                        height: "100%",
-                                    }}
-                                >
+                        <Box
+                            sx={{
+                                display: "flex",
+                                flexDirection: { xs: "column", md: "row" }, // Stack on small screens, side-by-side on larger screens
+                                gap: "1.5rem", // Spacing between the cards
+                                marginTop: "2rem", // Add margin for spacing
+                            }}
+                        >
+                            <Card
+                                sx={{
+                                    backgroundColor: "#FFFBEF", // Light yellow
+                                    borderRadius: "12px",
+                                    padding: "1.5rem",
+                                    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                                    flex: 1, // Equal width for both cards
+                                    maxWidth: 400,
+                                }}
+                            >
+                                <CardContent>
                                     <Typography
                                         variant="body2"
                                         sx={{
@@ -2225,24 +2327,21 @@ const MissPoppins: React.FC = () => {
                                             lineHeight: "1.6",
                                         }}
                                     >
-                                        1. Enable an open chat feature that is monitored 
-                                        and reviewed by Generative AI for moderation, 
-                                        ensuring that shared advice is credible and any 
-                                        inappropriate or misleading information is flagged or 
-                                        removed promptly.
+                                        2. Enable an open chat feature that is monitored and reviewed by Generative AI for moderation, ensuring that shared advice is credible and any inappropriate or misleading information is flagged or removed promptly.
                                     </Typography>
-                                </Box>
-                            </Grid>
-                            <Grid item xs={12} md={6}>
-                                <Box
-                                    sx={{
-                                        backgroundColor: "#FFFFFF", // White background
-                                        borderRadius: "12px",
-                                        padding: "1.5rem",
-                                        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                                        height: "100%",
-                                    }}
-                                >
+                                </CardContent>
+                            </Card>
+
+                            <Card
+                                sx={{
+                                    backgroundColor: "#FFF2FC", // White background
+                                    borderRadius: "12px",
+                                    padding: "1.5rem",
+                                    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                                    flex: 1, // Equal width for both cards
+                                }}
+                            >
+                                <CardContent>
                                     <Typography
                                         variant="body2"
                                         sx={{
@@ -2251,14 +2350,13 @@ const MissPoppins: React.FC = () => {
                                             lineHeight: "1.6",
                                         }}
                                     >
-                                        This feature provides users with a space to connect, 
-                                        share experiences, and communicate freely while 
-                                        maintaining a safe and trustworthy environment.
+                                        This feature provides users with a space to connect, share experiences, and communicate freely while maintaining a safe and trustworthy environment.
                                     </Typography>
-                                </Box>
-                            </Grid>
-                        </Grid>
+                                </CardContent>
+                            </Card>
+                        </Box>
                     </Box>
+
 
                 </Box>
             </Box>
@@ -2266,8 +2364,7 @@ const MissPoppins: React.FC = () => {
 
 
             {/* Wireframe Sketch Section */}
-            <Box
-            >
+            <Box>
                 {/* Section Title */}
                 <Typography
                     variant="h3"
@@ -2294,9 +2391,23 @@ const MissPoppins: React.FC = () => {
                 </Typography>
 
                 {/* Images Container */}
-                <Grid container spacing={2} justifyContent="center">
+                <Box
+                    sx={{
+                        display: "flex",
+                        flexWrap: "wrap",
+                        justifyContent: "center",
+                        gap: "2rem", // Spacing between images
+                    }}
+                >
                     {/* Image 1 */}
-                    <Grid item xs={12} md={4} sx={{ display: "flex", justifyContent: "center" }}>
+                    <Box
+                        sx={{
+                            display: "flex",
+                            justifyContent: "center",
+                            maxWidth: "400px", // Limit the max width of each image
+                            width: "100%",
+                        }}
+                    >
                         <CardMedia
                             component="img"
                             image={require("../assets/image18.png")} // Ensure the path matches your structure
@@ -2305,12 +2416,19 @@ const MissPoppins: React.FC = () => {
                                 borderRadius: "12px",
                                 boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
                                 width: "100%",
-                                maxWidth: "400px", // Set max width for the images
                             }}
                         />
-                    </Grid>
+                    </Box>
+
                     {/* Image 2 */}
-                    <Grid item xs={12} md={4} sx={{ display: "flex", justifyContent: "center" }}>
+                    <Box
+                        sx={{
+                            display: "flex",
+                            justifyContent: "center",
+                            maxWidth: "400px", // Limit the max width of each image
+                            width: "100%",
+                        }}
+                    >
                         <CardMedia
                             component="img"
                             image={require("../assets/image19.png")} // Ensure the path matches your structure
@@ -2319,12 +2437,19 @@ const MissPoppins: React.FC = () => {
                                 borderRadius: "12px",
                                 boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
                                 width: "100%",
-                                maxWidth: "400px",
                             }}
                         />
-                    </Grid>
+                    </Box>
+
                     {/* Image 3 */}
-                    <Grid item xs={12} md={4} sx={{ display: "flex", justifyContent: "center" }}>
+                    <Box
+                        sx={{
+                            display: "flex",
+                            justifyContent: "center",
+                            maxWidth: "400px", // Limit the max width of each image
+                            width: "100%",
+                        }}
+                    >
                         <CardMedia
                             component="img"
                             image={require("../assets/image20.png")} // Ensure the path matches your structure
@@ -2333,12 +2458,15 @@ const MissPoppins: React.FC = () => {
                                 borderRadius: "12px",
                                 boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
                                 width: "100%",
-                                maxWidth: "400px",
                             }}
                         />
-                    </Grid>
-                </Grid>
+                    </Box>
+                </Box>
             </Box>
+
+
+
+
 
             {/* Final Wireframe Section */}
             <Box
@@ -2366,13 +2494,25 @@ const MissPoppins: React.FC = () => {
                 <Box
                     sx={{
                         maxWidth: "1200px",
-                        margin: "0 auto", // Centers the container
+                        margin: "auto", // Centers the container
                     }}
                 >
                     {/* Images Container */}
-                    <Grid container spacing={2} justifyContent="center">
+                    <Box
+                        sx={{
+                            display: "flex",
+                            flexWrap: "wrap",
+                            justifyContent: "center",
+                            gap: "2rem", // Spacing between images
+                        }}
+                    >
                         {/* Image 1 */}
-                        <Grid item xs={12} md={4} sx={{ display: "flex", justifyContent: "center" }}>
+                        <Box
+                            sx={{
+                                maxWidth: "300px", // Limit the max width of each image
+                                width: "100%",
+                            }}
+                        >
                             <CardMedia
                                 component="img"
                                 image={require("../assets/image21.png")} // Ensure the path matches your structure
@@ -2381,12 +2521,17 @@ const MissPoppins: React.FC = () => {
                                     borderRadius: "40px",
                                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
                                     width: "100%",
-                                    maxWidth: "400px", // Set max width for the images
                                 }}
                             />
-                        </Grid>
+                        </Box>
+
                         {/* Image 2 */}
-                        <Grid item xs={12} md={4} sx={{ display: "flex", justifyContent: "center" }}>
+                        <Box
+                            sx={{
+                                maxWidth: "300px", // Limit the max width of each image
+                                width: "100%",
+                            }}
+                        >
                             <CardMedia
                                 component="img"
                                 image={require("../assets/image22.png")} // Ensure the path matches your structure
@@ -2395,12 +2540,17 @@ const MissPoppins: React.FC = () => {
                                     borderRadius: "40px",
                                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
                                     width: "100%",
-                                    maxWidth: "400px",
                                 }}
                             />
-                        </Grid>
+                        </Box>
+
                         {/* Image 3 */}
-                        <Grid item xs={12} md={4} sx={{ display: "flex", justifyContent: "center" }}>
+                        <Box
+                            sx={{
+                                maxWidth: "300px", // Limit the max width of each image
+                                width: "100%",
+                            }}
+                        >
                             <CardMedia
                                 component="img"
                                 image={require("../assets/image23.png")} // Ensure the path matches your structure
@@ -2409,12 +2559,17 @@ const MissPoppins: React.FC = () => {
                                     borderRadius: "40px",
                                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
                                     width: "100%",
-                                    maxWidth: "400px",
                                 }}
                             />
-                        </Grid>
+                        </Box>
+
                         {/* Image 4 */}
-                        <Grid item xs={12} md={4} sx={{ display: "flex", justifyContent: "center" }}>
+                        <Box
+                            sx={{
+                                maxWidth: "300px", // Limit the max width of each image
+                                width: "100%",
+                            }}
+                        >
                             <CardMedia
                                 component="img"
                                 image={require("../assets/image24.png")} // Ensure the path matches your structure
@@ -2423,13 +2578,17 @@ const MissPoppins: React.FC = () => {
                                     borderRadius: "40px",
                                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
                                     width: "100%",
-                                    maxWidth: "400px",
-                                    marginTop: "3rem",
                                 }}
                             />
-                        </Grid>
+                        </Box>
+
                         {/* Image 5 */}
-                        <Grid item xs={12} md={4} sx={{ display: "flex", justifyContent: "center" }}>
+                        <Box
+                            sx={{
+                                maxWidth: "300px", // Limit the max width of each image
+                                width: "100%",
+                            }}
+                        >
                             <CardMedia
                                 component="img"
                                 image={require("../assets/image25.png")} // Ensure the path matches your structure
@@ -2438,14 +2597,12 @@ const MissPoppins: React.FC = () => {
                                     borderRadius: "40px",
                                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
                                     width: "100%",
-                                    maxWidth: "400px",
-                                    marginTop: "3rem",
                                 }}
                             />
-                        </Grid>
-                    </Grid>
+                        </Box>
+                    </Box>
                 </Box>
-                
+
                 {/* View Full Wireframes Button */}
                 <Box
                     sx={{
@@ -2475,11 +2632,9 @@ const MissPoppins: React.FC = () => {
                         View Full Wireframes
                     </Button>
                 </Box>
-
-
             </Box>
 
-    
+                
 
 
 

@@ -12,7 +12,7 @@ const theme = createTheme({
         },
     },
     typography: {
-      fontFamily: "'Playfair Display', serif", // Updated fontFamily
+      fontFamily: "'Playfair Display', serif, 'Poppins', sans-serif, 'Open Sans', sans-serif,'Roboto', sans-serif", // Combine both fonts
     },
 
 });
