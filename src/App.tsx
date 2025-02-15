@@ -7,6 +7,7 @@ import Portfolio from "./components/Portfolio";
 import Header from "./components/Header";
 import MissPoppins from "./components/MissPoppins";
 import AboutMe from "./components/AboutMe";
+import MBTIRamen from "./components/MBTIRamen";
 
 const App: React.FC = () => {
     return (
@@ -28,6 +29,7 @@ const App: React.FC = () => {
                     <Route path="/portfolio" element={<Portfolio />} />
                     <Route path="/misspoppins" element={<MissPoppins />} />
                     <Route path="/aboutme" element={<AboutMe />} />
+                    <Route path="/mbtiramen" element={<MBTIRamen />} />
                     {/* Redirect /about to /aboutme */}
                     <Route path="/about" element={<Navigate to="/aboutme" replace />} />
                     {/* Catch-all route for undefined paths */}

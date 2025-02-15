@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Typography, Card, CardContent, CardMedia, Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import Image1 from "../assets/image1.png"; // Adjust the path if necessary
+import MBTI from "../assets/MBTI.png";
 
 const Portfolio: React.FC = () => {
     return (
@@ -147,6 +148,142 @@ const Portfolio: React.FC = () => {
                     }}
                 />
             </Card>
+
+            {/*MBTI RAMEN*/}
+            {/* Work Card */}
+            <Card
+                sx={{
+                    display: "flex",
+                    flexDirection: { xs: "column", md: "row" },
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    backgroundColor: "#FFFFFF", // White card background
+                    padding: "3rem",
+                    borderRadius: "25px",
+                    maxWidth: "1200px",
+                    width: "100%",
+                    marginTop: "2rem",
+                }}
+            >
+                {/* Text Section */}
+                <CardContent
+                    sx={{
+                        flex: 1,
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "1rem",
+                        justifyContent: "center", // Center align vertically
+                    }}
+                >
+                    <Typography
+                        variant="h4"
+                        sx={{
+                            color: "#EB895E", // Orange
+                            fontWeight: "bold",
+                            cursor: "pointer",
+                        }}
+                    >
+                        MBTI Ramen Project:
+                    </Typography>
+                    <Typography
+                        variant="subtitle1"
+                        sx={{
+                            color: "#EB895E", // Orange
+                            fontWeight: "medium",
+                        }}
+                    >
+                        As a Computer Science and Psychology major who 
+                        loves instant ramen, this MBTI Ramen Project 
+                        was the perfect mix of everything I enjoy.
+                    </Typography>
+                    <Box
+                        sx={{
+                            backgroundColor: "#FDFAF3", // Updated background color
+                            padding: "1.5rem",
+                            borderRadius: "8px",
+                            boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.2)",
+                            marginTop: "1rem", // Add spacing from the subtitle
+                        }}
+                    >
+                        <Typography
+                            variant="body1"
+                            sx={{
+                                color: "#000000", // Updated text color
+                                marginBottom: "1rem",
+                            }}
+                        >
+                            <strong>Overview:</strong> A web-based quiz where users answer 
+                            questions about their preferences and personality traits to be 
+                            assigned one of 16 ramen types, each carefully matched to an MBTI 
+                            personality.
+                        </Typography>
+                        <Typography
+                            variant="body1"
+                            sx={{
+                                color: "#000000", // Updated text color
+                                marginBottom: "1rem",
+                            }}
+                        >
+                            <strong>Role:</strong> UX/UI designer, Front-end Developer
+                        </Typography>
+                        <Typography
+                            variant="body1"
+                            sx={{
+                                color: "#000000", // Updated text color
+                                marginBottom: "1rem",
+                            }}
+                        >
+                            <strong>Toolkit:</strong> Figma
+                        </Typography>
+                        <Typography
+                            variant="body1"
+                            sx={{
+                                color: "#000000", // Updated text color
+                            }}
+                        >
+                            <strong>Languages:</strong> Javascript, CSS, HTML
+                        </Typography>
+                    </Box>
+
+                    {/* Learn More Button */}
+                    <Button
+                            variant="contained"
+                            sx={{
+                                backgroundColor: "#000000", // Dark purple button
+                                color: "#FFFFFF",
+                                textTransform: "none",
+                                fontSize: "1rem",
+                                borderRadius: "25px",
+                                padding: "0.5rem 2rem",
+                                width: "25%",
+                                alignSelf: "center",
+                                boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.5)",
+                                marginTop: "1.5rem", // Add spacing
+                                "&:hover": { backgroundColor: "#EB895E" }, // Hover color
+                            }}
+                            component={Link}
+                            to="/mbtiramen" // Link to MBTIRamen.tsx
+                        >
+                            Learn More
+                        </Button>
+                </CardContent>
+
+                {/* Image Section */}
+                <CardMedia
+                    component="img"
+                    image={MBTI}
+                    alt="MBTI"
+                    sx={{
+                        maxWidth: "300px",
+                        borderRadius: "35px", // Rounded corners
+                        marginLeft: { md: "2rem" }, // Add space on large screens
+                        marginTop: { xs: "2rem", md: "0" }, // Add space on small screens
+                        border: "2px solid #B8ACAC",
+                    }}
+                />
+            </Card>
+
+
         </Box>
     );
 };
